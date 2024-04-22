@@ -1,0 +1,180 @@
+<<Метод readFromFiles >> : 22.04.2024 14:45:06
+Аргументы:
+[]
+Результат выполнения:
+[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко павел викторович, dateInput=01.01.2024 12:00:00, applType=fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=маличенко Татьяна владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия павловна, dateInput=03.01.2024 12:00:00, applType=post
+, Model= filename= file1.txtusername=Пользователь_4, fio=маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_1, fio=маличенко павел викторович, dateInput=, applType=bluebird
+]
+<<Метод checkFioL >> : 22.04.2024 14:45:06
+Аргументы:
+[[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко павел викторович, dateInput=01.01.2024 12:00:00, applType=fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=маличенко Татьяна владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия павловна, dateInput=03.01.2024 12:00:00, applType=post
+, Model= filename= file1.txtusername=Пользователь_4, fio=маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_1, fio=маличенко павел викторович, dateInput=, applType=bluebird
+]]
+Результат выполнения:
+[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=01.01.2024 12:00:00, applType=fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=Маличенко Татьяна Владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия Павловна, dateInput=03.01.2024 12:00:00, applType=post
+, Model= filename= file1.txtusername=Пользователь_4, fio=Маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=, applType=bluebird
+]
+<<Метод checkTypeL >> : 22.04.2024 14:45:06
+Аргументы:
+[[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=01.01.2024 12:00:00, applType=fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=Маличенко Татьяна Владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия Павловна, dateInput=03.01.2024 12:00:00, applType=post
+, Model= filename= file1.txtusername=Пользователь_4, fio=Маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=, applType=bluebird
+]]
+Результат выполнения:
+[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=01.01.2024 12:00:00, applType=other:fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=Маличенко Татьяна Владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия Павловна, dateInput=03.01.2024 12:00:00, applType=other:post
+, Model= filename= file1.txtusername=Пользователь_4, fio=Маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=, applType=other:bluebird
+]
+<<Метод checkDateL >> : 22.04.2024 14:45:06
+Аргументы:
+[[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=01.01.2024 12:00:00, applType=other:fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=Маличенко Татьяна Владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия Павловна, dateInput=03.01.2024 12:00:00, applType=other:post
+, Model= filename= file1.txtusername=Пользователь_4, fio=Маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=, applType=other:bluebird
+]]
+Результат выполнения:
+[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=01.01.2024 12:00:00, applType=other:fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=Маличенко Татьяна Владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия Павловна, dateInput=03.01.2024 12:00:00, applType=other:post
+, Model= filename= file1.txtusername=Пользователь_4, fio=Маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+]
+<<Метод checkTypeL >> : 22.04.2024 14:58:37
+Аргументы:
+[[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко павел викторович, dateInput=01.01.2024 12:00:00, applType=fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=маличенко Татьяна владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия павловна, dateInput=03.01.2024 12:00:00, applType=post
+, Model= filename= file1.txtusername=Пользователь_4, fio=маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_1, fio=маличенко павел викторович, dateInput=, applType=bluebird
+]]
+Результат выполнения:
+[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко павел викторович, dateInput=01.01.2024 12:00:00, applType=other:fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=маличенко Татьяна владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия павловна, dateInput=03.01.2024 12:00:00, applType=other:post
+, Model= filename= file1.txtusername=Пользователь_4, fio=маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_1, fio=маличенко павел викторович, dateInput=, applType=other:bluebird
+]
+<<Метод checkFioL >> : 22.04.2024 14:58:37
+Аргументы:
+[[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко павел викторович, dateInput=01.01.2024 12:00:00, applType=other:fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=маличенко Татьяна владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия павловна, dateInput=03.01.2024 12:00:00, applType=other:post
+, Model= filename= file1.txtusername=Пользователь_4, fio=маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_1, fio=маличенко павел викторович, dateInput=, applType=other:bluebird
+]]
+Результат выполнения:
+[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=01.01.2024 12:00:00, applType=other:fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=Маличенко Татьяна Владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия Павловна, dateInput=03.01.2024 12:00:00, applType=other:post
+, Model= filename= file1.txtusername=Пользователь_4, fio=Маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=, applType=other:bluebird
+]
+<<Метод checkDateL >> : 22.04.2024 14:58:37
+Аргументы:
+[[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=01.01.2024 12:00:00, applType=other:fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=Маличенко Татьяна Владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия Павловна, dateInput=03.01.2024 12:00:00, applType=other:post
+, Model= filename= file1.txtusername=Пользователь_4, fio=Маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=, applType=other:bluebird
+]]
+Результат выполнения:
+[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=01.01.2024 12:00:00, applType=other:fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=Маличенко Татьяна Владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия Павловна, dateInput=03.01.2024 12:00:00, applType=other:post
+, Model= filename= file1.txtusername=Пользователь_4, fio=Маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+]
+<<Метод checkTypeL >> : 22.04.2024 14:59:38
+Аргументы:
+[[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко павел викторович, dateInput=01.01.2024 12:00:00, applType=fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=маличенко Татьяна владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия павловна, dateInput=03.01.2024 12:00:00, applType=post
+, Model= filename= file1.txtusername=Пользователь_4, fio=маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_1, fio=маличенко павел викторович, dateInput=, applType=bluebird
+]]
+Результат выполнения:
+[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко павел викторович, dateInput=01.01.2024 12:00:00, applType=other:fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=маличенко Татьяна владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия павловна, dateInput=03.01.2024 12:00:00, applType=other:post
+, Model= filename= file1.txtusername=Пользователь_4, fio=маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_1, fio=маличенко павел викторович, dateInput=, applType=other:bluebird
+]
+<<Метод checkFioL >> : 22.04.2024 14:59:38
+Аргументы:
+[[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко павел викторович, dateInput=01.01.2024 12:00:00, applType=other:fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=маличенко Татьяна владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия павловна, dateInput=03.01.2024 12:00:00, applType=other:post
+, Model= filename= file1.txtusername=Пользователь_4, fio=маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_1, fio=маличенко павел викторович, dateInput=, applType=other:bluebird
+]]
+Результат выполнения:
+[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=01.01.2024 12:00:00, applType=other:fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=Маличенко Татьяна Владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия Павловна, dateInput=03.01.2024 12:00:00, applType=other:post
+, Model= filename= file1.txtusername=Пользователь_4, fio=Маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=, applType=other:bluebird
+]
+<<Метод checkDateL >> : 22.04.2024 14:59:38
+Аргументы:
+[[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=01.01.2024 12:00:00, applType=other:fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=Маличенко Татьяна Владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия Павловна, dateInput=03.01.2024 12:00:00, applType=other:post
+, Model= filename= file1.txtusername=Пользователь_4, fio=Маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=, applType=other:bluebird
+]]
+Результат выполнения:
+[Model= filename= file1.txtusername=Пользователь_1, fio=Маличенко Павел Викторович, dateInput=01.01.2024 12:00:00, applType=other:fax
+, Model= filename= file1.txtusername=Пользователь_2, fio=Маличенко Татьяна Владимировна, dateInput=02.01.2024 15:00:00, applType=mobile
+, Model= filename= file1.txtusername=Пользователь_3, fio=Маличенко Анастасия Павловна, dateInput=03.01.2024 12:00:00, applType=other:post
+, Model= filename= file1.txtusername=Пользователь_4, fio=Маличенко Дарья Павловна, dateInput=04.01.2024 13:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_5, fio=Маличенко Виктор Александрович, dateInput=05.01.2024 14:00:00, applType=mobile
+, Model= filename= file2.txtusername=Пользователь_6, fio=Маличенко Нина Фёдоровна, dateInput=06.01.2024 15:00:00, applType=mobile
+]
